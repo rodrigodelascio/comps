@@ -1,22 +1,29 @@
 import Button from "./components/Button";
+import { GoBell } from "react-icons/go";
 
 function App() {
   return (
     <div>
       <div>
-        <Button>Button 1</Button>
+        <Button>
+          <GoBell />
+          Plain
+        </Button>
       </div>
       <div>
-        <Button>Button 2</Button>
+        <Button primary>Primary</Button>
       </div>
       <div>
-        <Button>Button 3</Button>
+        <Button secondary>Secondary</Button>
       </div>
       <div>
-        <Button>Button 4</Button>
+        <Button success>Success</Button>
       </div>
       <div>
-        <Button>Button 5</Button>
+        <Button warning>Warning</Button>
+      </div>
+      <div>
+        <Button danger>Danger</Button>
       </div>
     </div>
   );
